@@ -19,7 +19,7 @@ const Home = () => {
     }
 
     return(
-        <table className="table container">
+        <table className="table container border border-dark mt-4">
             <thead>
                 <tr>
                     <th scope="col">#</th>
@@ -38,7 +38,7 @@ const Home = () => {
                        <td>{user.email}</td>
                        <td>
                            <Link className="btn btn-outline-info btn- btn-sm m-1" to={`/edituser/${user.id}`}>Edit</Link>
-                           <Link className="btn btn-outline-danger btn-sm m-1" onClick={() => (deleteUser)}>Delete</Link>
+                           <button className="btn btn-outline-danger btn-sm m-1" onClick={() => (deleteUser(user.id))}>Delete</button>
                        </td>
                    </tr>
                ))}

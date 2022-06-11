@@ -33,7 +33,7 @@ const EditUser = () => {
 
     return (
         <div className="container">
-            <div className="w-75 mx-auto shadow p-5">
+            <div className="w-75 mx-auto border border-dark p-5 mt-3">
                 <h2 className="text-center mb-4">Edit User</h2>
                 <form onSubmit={onSubmit}>
                     <div className="form-group">
@@ -66,7 +66,8 @@ const EditUser = () => {
                             />
                         </div>
                     </div>
-                    <button type="submit" className="btn btn-info btn-block">Edit User</button>
+                    <br/>
+                    <button type="submit" className="btn btn-info border border-dark">Edit User</button>
                 </form>
             </div>
         </div>
